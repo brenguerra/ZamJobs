@@ -1,0 +1,52 @@
+{
+  "name": "joblance",
+  "version": "0.0.1",
+  "description": "freelance market for manual laborers",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently start \"npm run server \"  \"npm run socket \"",
+    "server": "nodemon backend/server.js",
+    "client": "npm start --prefix frontend",
+    "socket": "npm start --prefix socket",
+    "dev": "concurrently start \"npm run server \" \"npm run client\" \"npm run socket \""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DnAlvrz/joblance.git"
+  },
+  "keywords": [
+    "freelance",
+    "service",
+    "manual",
+    "laborers",
+    "job",
+    "market"
+  ],
+  "author": "Don Alvarez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DnAlvrz/joblance/issues"
+  },
+  "homepage": "https://github.com/DnAlvrz/joblance#readme",
+  "devDependencies": {
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.19"
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "colors": "^1.4.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-async-handler": "^1.2.0",
+    "express-fileupload": "^1.4.0",
+    "google-map-react": "^2.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "moment-timezone": "^0.5.38",
+    "mongoose": "^6.5.3",
+    "passport": "^0.6.0",
+    "passport-jwt": "^4.0.0",
+    "react-moment": "^1.1.2"
+  }
+}

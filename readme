@@ -1,0 +1,2 @@
+run development enviroment commabd  = npm run dev
+build command = npm run build
