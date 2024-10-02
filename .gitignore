@@ -4,7 +4,6 @@ tasks/
 files/
 test.html
 test/
-.env
 .http
 Bugs.md
 Checklist-Backend.md
