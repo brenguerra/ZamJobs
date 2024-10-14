@@ -80,7 +80,7 @@ https.createServer(options, app).listen(process.env.HTTPS_PORT, function () {
   console.log(`listening on *:${process.env.HTTPS_PORT}`);
 });
 http.createServer(app).listen(port, () => {
-  console.log(`Server running on http://localhost:${port}`.blue.underline);
+  console.log(`Server running on http://localhost:3000`.blue.underline);
 });
 
 
